@@ -1,0 +1,450 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+      font-family: 'Orbitron', sans-serif;
+      background-image: url('assets/whitebrown.webp');
+      width: 100vw;
+      height: auto;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #fff;
+      margin: 0;
+      overflow-y: auto;
+      overflow-x: hidden;
+      margin: auto;
+    }
+    
+    header {    
+      text-align: left;
+      padding: 15px 20px;
+      background: rgb(34, 11, 0);
+      background-size: cover; 
+      background-position: center center; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    
+    header img {
+      width: 10%;
+      height: 8%;
+    }
+    
+    
+    nav {
+      display: flex;
+      gap: 20px;
+      z-index: 2; 
+      justify-content: flex-start;
+      padding-right: 2%;
+    }
+    
+    nav a {
+      font-family: "Be Vietnam Pro", serif;
+      font-weight: 300;
+      font-style: normal;
+      text-decoration: none;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    
+    nav a:hover {
+      color: #ff5319;
+        position: relative;
+        z-index: 3;
+      }  
+    
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+    
+    .hamburger div {
+      width: 30px;
+      height: 4px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+    
+    .start {
+      text-align: left;
+      padding: 20px;
+      position: relative;
+      color: #fff;
+      display: flex;
+      align-items: center; 
+      justify-content: space-between; 
+      height: 60vh; 
+  }
+    
+    .start::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 65vh;
+      background-image: url('assets/startpage.PNG');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1;
+      display: flex;
+      margin: auto;
+    }
+  
+  
+  .start-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: -100px; 
+      margin-left: 30px;
+      max-width: 60%; 
+  }
+  
+  .start h2 {
+      font-family: "Fredericka the Great", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 140px; 
+      letter-spacing: 8px;
+      text-align: left; 
+      margin-bottom: 10px;
+      line-height: 1.2;
+      text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+      z-index: 2;
+  }
+  
+  .start a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .start figcaption{
+      font-family: "Be Vietnam Pro", serif;
+      font-weight: 400;
+      font-size: 24px;
+      text-align: left;
+      z-index: 2;
+      border: 2px #fff solid;
+      padding: 10px;
+      margin-left: 32px;
+      max-width: 100%;
+      text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  }
+  
+  .start p {
+      font-family: "Be Vietnam Pro", serif;
+      font-weight: 400;
+      font-size: 24px;
+      text-align: left;
+      z-index: 2;
+      max-width: 100%;
+      margin-left: 30px;
+      text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  }
+  .start .gif {
+      height: 70vh;
+      z-index: 1;
+      display: block;
+      margin-right: 5%; 
+      transform: rotate(15deg);
+  }
+  
+  .main{
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+  }
+  .main{
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+  #Menu{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+  }
+  
+  #Menu img{
+       margin: auto;
+    }
+  
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      text-align: center;
+    }
+  
+    
+    .main .drinks, .snacks, .dessert {
+      font-family: "Fredericka the Great", serif;
+      font-weight: 500;
+      font-style: normal;
+      letter-spacing: 4px;
+      text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+      font-size: 30px;
+      background-color: rgb(100, 55, 0);
+      color: white;
+      padding: 15px 30px;
+      border-radius: 25px;
+      margin-left: -69%;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      margin-bottom: -5px;
+      padding-left: 60px; 
+      position: relative; 
+    }
+    
+    .main .drinks::before {
+      content: "";
+      background: url('assets/coffe-icon.webp'); 
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      width: 40px;  
+      height: 30px; 
+      position: absolute;
+      left: 15px;  
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .main .snacks::before {
+      content: "";
+      background: url('assets/bredicon\ \(2\).png'); 
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      width: 40px;  
+      height: 30px; 
+      position: absolute;
+      left: 15px;  
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .main .dessert::before {
+      content: "";
+      background: url('assets/desserticons.png'); 
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      width: 40px;  
+      height: 30px; 
+      position: absolute;
+      left: 15px;  
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    .main h2{
+      font-family: "Fredericka the Great", serif;
+      font-weight: 500;
+      font-style: normal;
+      text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+      font-size: 35px;
+      color: rgb(100, 55, 0)
+    }
+    
+    .drink-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative; 
+      border-radius: 10px;
+      padding: 30px;
+      margin: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      width: 300px; 
+      color: #fff;
+      font-family: "Be Vietnam Pro", serif;
+      text-align: center;
+      margin-bottom: 20px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .drink-info::before {
+      content: ''; 
+      position: absolute; 
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('assets/coffecards.jpg');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      transform: rotate(180deg); 
+      z-index: -1; 
+  }
+  
+    .drink-photo img {
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border-color: white;
+      border: 5px solid white;
+    }
+    
+    .drink-details h3 {
+      font-family: "Fredericka the Great", serif;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 3px;
+      font-size: 26px;
+      margin-bottom: 15px;
+      text-shadow: 2px 4px 3px rgba(0,0,0,0.7);
+    }
+    
+    .drink-details p {
+      font-size: 18px;
+      margin: 5px 2;
+      text-align: center;
+      text-shadow: 2px 4px 3px rgba(0,0,0,0.7);
+    }
+  
+    .drink-info:hover {
+      transform: translateY(-8px);
+  }
+  
+  .drink-details a {
+      color: white;
+      text-decoration: none;
+    }
+    
+    .drink-details a:hover {
+      text-decoration: underline; 
+    }
+   
+    footer {
+    background: rgb(34, 11, 0);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: "Be Vietnam Pro", serif;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    margin-top: 80px;
+    gap: 5px;
+    }
+    
+    .copyright {
+    text-align: right;
+    color: white;
+    padding: 5px;
+    margin-right: 5%;
+   
+    }
+    
+  
+    .contact-info{
+      margin-left: 5%;
+    }
+    .contact-info a {
+      font-family: "Be Vietnam Pro", serif;
+      font-weight: 300;
+      font-style: normal;
+  
+    color: #ff5319;
+    text-decoration: none;
+    text-align: left;
+    }
+    
+    .contact-info a:hover {
+    text-decoration: underline;
+    color: white;
+    }
+    
+    
+    .logofooter img{
+    width: auto;
+    align-content: center;
+    height: 15vh;
+    margin-top: 3%;
+    margin-left: 25%;
+    transition: transform 0.3s ease;
+    }
+  
+    .logofooter img:hover{
+      transform: translateY(-8px);
+      
+      }
+  
+  .socmed-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+  }
+  
+  .socmed-icons{
+    display:flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  
+  .socmed-icons img{
+    width: 70px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .socmed-icons img:hover{
+    transform: translateY(-8px);
+  }
+  
+  @media (max-width: 768px) {
+    footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 10px;
+    }
+  
+    .copyright {
+      text-align: center;
+      margin-right: 0;
+    }
+  
+    .contact-info {
+      margin-left: 0;
+    }
+  
+    .socmed-container {
+      align-items: center;
+    }
+  
+    .socmed-icons {
+      justify-content: center;
+    }
+  
+    .logofooter img {
+      margin-left: 0;
+      height: 12vh;
+    }
+  }
+    

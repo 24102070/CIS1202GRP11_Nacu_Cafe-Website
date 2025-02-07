@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
+
+body{
+    display: flex;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('assets/startpage.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.text {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.text h1{
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    color: white;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    border: 2px #fff solid;
+    padding: 5px;
+}
+
+.text h2{
+    font-family: "Be Vietnam Pro", serif;
+    font-weight: 300;
+    font-style: normal;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    color: white;
+    font-size: 36px;
+}
+
+button{
+    font-family: "Be Vietnam Pro", serif;
+    font-weight: 200;
+    font-style: normal;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 13px 23px;
+    border: 1px solid #222222;
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+    background: #fff;
+    color: #222222;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+button:hover {
+    border-color: #000000;
+    background: #f7f7f7;
+    transform: translateY(-5px);
+}
